@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIS ARENA</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-uppercase" href="#">BIS ARENA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#quizzes-leaderboard">Quizzes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#games-section">Games</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team-collaboration">Teams</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#badges-progress">Badges</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold"> Ready for Challenge</h1>
+            <p class="lead">Compete, Collaborate, and Conquer!</p>
+        </div>
+    </header>
+
+    <!-- User Input Section -->
+    <section id="user-input" class="py-4 bg-light">
+        <div class="container text-center">
+            <h3 class="fw-bold">Track Your Progress</h3>
+            <form id="userForm" class="d-flex justify-content-center mt-3">
+                <input type="text" class="form-control w-50" id="username" placeholder="Enter your name">
+                <button type="button" class="btn btn-primary ms-2" onclick="showProgress()">View Progress</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="quizzes-leaderboard" class="py-5">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4">Features</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Quizzes</h5>
+                            <p class="card-text">Timed quizzes with real-time scoring to test your knowledge.</p>
+                            <a href="#" class="btn btn-primary">Start Quiz</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Leaderboards</h5>
+                            <p class="card-text">Track your rank individually or as part of a team.</p>
+                            <a href="#" class="btn btn-primary">View Leaderboard</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games-section" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4">Games</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Fruit Cutter Game</h5>
+                            <p class="card-text">Cut the right answers in a fast-paced dynamic quiz game.</p>
+                            <a href="#" class="btn btn-primary">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Brain Teasers</h5>
+                            <p class="card-text">Solve puzzles and enhance your BIS understanding.</p>
+                            <a href="#" class="btn btn-primary">Solve Teasers</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Collaboration -->
+    <section id="team-collaboration" class="py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold">Team Collaboration</h2>
+            <p>Form teams, compete, and track team performances.</p>
+            <a href="#" class="btn btn-success">View Team Leaderboard</a>
+        </div>
+    </section>
+
+    <!-- Badges and Progress -->
+    <section id="badges-progress" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold">Your Achievements</h2>
+            <div id="userProgress" class="mt-4"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 BIS Hackathon. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
